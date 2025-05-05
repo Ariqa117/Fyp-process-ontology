@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#assesses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#assesses">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#belongsToDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#belongsToDomain">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#containsModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#containsModule">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#creates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#creates">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#generatesDeliverable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#generatesDeliverable">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSupervisor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSupervisor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#includesActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#includesActivity">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#meetsRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#meetsRequirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#usesTechnology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#usesTechnology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#worksOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#worksOn">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasAbstract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasAbstract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasActivityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasActivityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasComments -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDeliverableName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDeliverableName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDepartment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDomainName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDomainName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEmail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="&xsd;dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluatorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluatorName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasModuleName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasModuleName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasPurpose -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasPurpose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="&xsd;dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSubmissionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSubmissionDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTechName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTechName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#isTeamLeader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#isTeamLeader">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#FinalDefense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#FinalDefense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#PeerReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#PeerReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Requirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SupervisorEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SupervisorEvaluation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
