@@ -1,0 +1,1219 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"
+    id="eppiocemhmnlbhjplcgkofciiegomcon"></script>
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="owl.css" rel="stylesheet" type="text/css">
+    <link href="Primer.css" rel="stylesheet" type="text/css">
+    <link href="rec.css" rel="stylesheet" type="text/css">
+    <link href="extra.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/lode/favicon.ico">
+    <script src="jquery.js"></script>
+    <script src="jquery.scrollTo.js"></script>
+    <script src="marked.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                jQuery(".markdown").each(function (el) {
+                    jQuery(this).after(marked(jQuery(this).text())).remove()
+                });
+                var list =
+                    $('a[name="
+    https://raw.githubusercontent.com/Ariqa117/Fyp-process-ontology/refs/heads/main/ontology.owl
+                        "]');
+    if (list.size() != 0) {
+                    var element = list.first();
+                    $.scrollTo(element);
+                }
+            });
+    </script>
+</head>
+
+<body __processed_7f164978-f154-4cd5-a40f-e3b23b34e8d6__="true">
+    <div class="head">
+        <dl>
+            <dt>IRI:</dt>
+            <dd>http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9</dd>
+        </dl>
+        <dl>
+            <dt>Other visualisation
+                :
+            </dt>
+            <dd><a
+                    href="/lode/source?url=https://raw.githubusercontent.com/Ariqa117/Fyp-process-ontology/refs/heads/main/ontology.owl">Ontology
+                    source</a>
+                -
+                <a
+                    href="https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/Ariqa117/Fyp-process-ontology/refs/heads/main/ontology.owl">WebVowl</a>
+            </dd>
+        </dl>
+    </div>
+    <hr>
+    <div id="toc">
+        <h2>Table of Content</h2>
+        <ol>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#objectproperties">Object Properties</a></li>
+            <li><a href="#dataproperties">Data Properties</a></li>
+            <li><a href="#generalaxioms">General Axioms</a></li>
+            <li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+        </ol>
+    </div>
+    <div id="classes">
+        <h2>Classes</h2>
+        <ul class="hlist">
+            <li><a href="#d4e356"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis"><span>analysis</span></a>
+            </li>
+            <li><a href="#d4e368"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment"><span>deployment</span></a>
+            </li>
+            <li><a href="#d4e375"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design"><span>design</span></a>
+            </li>
+            <li><a href="#d4e383"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation"><span>documentation</span></a>
+            </li>
+            <li><a href="#d4e399"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#FinalDefense"><span>final
+                        defense</span></a></li>
+            <li><a href="#d4e406"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation"><span>implementation</span></a>
+            </li>
+            <li><a href="#d4e418"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#PeerReview"><span>peer
+                        review</span></a></li>
+            <li><a href="#d4e425"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation"><span>presentation</span></a>
+            </li>
+            <li><a href="#d4e437"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype"><span>prototype</span></a>
+            </li>
+            <li><a href="#d4e444"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report"><span>report</span></a>
+            </li>
+            <li><a href="#d4e456"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode"><span>source
+                        code</span></a></li>
+            <li><a href="#d4e472"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SupervisorEvaluation"><span>supervisor
+                        evaluation</span></a></li>
+            <li><a href="#d4e483"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing"><span>testing</span></a>
+            </li>
+        </ul>
+        <div id="d4e356" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis"></a>
+            <h3>analysis<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e368"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">deployment</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e375"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">design</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e383"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e406"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">implementation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e483"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">testing</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e368" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment"></a>
+            <h3>deployment<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e356"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">analysis</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e375"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">design</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e383"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e406"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">implementation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e483"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">testing</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e375" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design"></a>
+            <h3>design<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or
+                    <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design
+            </p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e356"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">analysis</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e368"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">deployment</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e383"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e406"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">implementation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e483"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">testing</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e383" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation"></a>
+            <h3>documentation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e356"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">analysis</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e368"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">deployment</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e375"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">design</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e406"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">implementation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e483"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">testing</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e399" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#FinalDefense"></a>
+            <h3>final defense<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#FinalDefense</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e406" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation"></a>
+            <h3>implementation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e356"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">analysis</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e368"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">deployment</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e375"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">design</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e383"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e483"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">testing</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e418" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#PeerReview"></a>
+            <h3>peer review<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#PeerReview</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e425" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation"></a>
+            <h3>presentation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e437"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype">prototype</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e444"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report">report</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e456"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode">source
+                        code</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e437" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype"></a>
+            <h3>prototype<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e425"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation">presentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e444"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report">report</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e456"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode">source
+                        code</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e444" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report"></a>
+            <h3>report<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or
+                    <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report
+            </p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e425"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation">presentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e437"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype">prototype</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e456"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode">source
+                        code</a><sup title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e456" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode"></a>
+            <h3>source code<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e425"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation">presentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e437"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype">prototype</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e444"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report">report</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e472" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SupervisorEvaluation"></a>
+            <h3>supervisor evaluation<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SupervisorEvaluation</p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+        <div id="d4e483" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing"></a>
+            <h3>testing<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a>
+                    or <a href="#classes">Class ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing
+            </p>
+            <dl class="description">
+                <dt>has super-classes</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup></dd>
+                <dt>is disjoint with</dt>
+                <dd><span class="dotted"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e356"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">analysis</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e368"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">deployment</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e375"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">design</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e383"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">documentation</a><sup
+                        title="class" class="type-c">c</sup>, <a href="#d4e406"
+                        title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">implementation</a><sup
+                        title="class" class="type-c">c</sup></dd>
+            </dl>
+        </div>
+    </div>
+    <div id="objectproperties">
+        <h2>Object Properties</h2>
+        <ul class="hlist">
+            <li><a href="#d4e9"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#assesses"><span>assesses</span></a>
+            </li>
+            <li><a href="#d4e19"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#belongsToDomain"><span>belongs
+                        to domain</span></a></li>
+            <li><a href="#d4e28"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#containsModule"><span>contains
+                        module</span></a></li>
+            <li><a href="#d4e37"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#creates"><span>creates</span></a>
+            </li>
+            <li><a href="#d4e47"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#generatesDeliverable"><span>generates
+                        deliverable</span></a></li>
+            <li><a href="#d4e56"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluation"><span>has
+                        evaluation</span></a></li>
+            <li><a href="#d4e65"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudent"><span>has
+                        student</span></a></li>
+            <li><a href="#d4e75"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSupervisor"><span>has
+                        supervisor</span></a></li>
+            <li><a href="#d4e84"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#includesActivity"><span>includes
+                        activity</span></a></li>
+            <li><a href="#d4e93"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#meetsRequirement"><span>meets
+                        requirement</span></a></li>
+            <li><a href="#d4e103"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#usesTechnology"><span>uses
+                        technology</span></a></li>
+            <li><a href="#d4e112"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#worksOn"><span>works
+                        on</span></a></li>
+        </ul>
+        <div id="d4e9" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#assesses"></a>
+            <h3>assesses<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#assesses</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor">supervisor</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e19" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#belongsToDomain"></a>
+            <h3>belongs to domain<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#belongsToDomain</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain">domain</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e28" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#containsModule"></a>
+            <h3>contains module<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#containsModule</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module">module</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e37" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#creates"></a>
+            <h3>creates<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#creates
+            </p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e47" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#generatesDeliverable"></a>
+            <h3>generates deliverable<sup title="object property" class="type-op">op</sup><span class="backlink"> back
+                    to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#generatesDeliverable</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e56" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluation"></a>
+            <h3>has evaluation<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluation</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e65" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudent"></a>
+            <h3>has student<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudent</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e75" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSupervisor"></a>
+            <h3>has supervisor<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSupervisor</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor">supervisor</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e84" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#includesActivity"></a>
+            <h3>includes activity<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#includesActivity</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e93" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#meetsRequirement"></a>
+            <h3>meets requirement<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#meetsRequirement</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Requirement">requirement</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e103" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#usesTechnology"></a>
+            <h3>uses technology<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#usesTechnology</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology">technology</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e112" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#worksOn"></a>
+            <h3>works on<sup title="object property" class="type-op">op</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#worksOn
+            </p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="dataproperties">
+        <h2>Data Properties</h2>
+        <ul class="hlist">
+            <li><a href="#d4e123"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasAbstract"><span>has
+                        abstract</span></a></li>
+            <li><a href="#d4e133"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasActivityName"><span>has
+                        activity name</span></a></li>
+            <li><a href="#d4e142"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasComments"><span>has
+                        comments</span></a></li>
+            <li><a href="#d4e151"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDeliverableName"><span>has
+                        deliverable name</span></a></li>
+            <li><a href="#d4e161"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDepartment"><span>has
+                        department</span></a></li>
+            <li><a href="#d4e170"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDescription"><span>has
+                        description</span></a></li>
+            <li><a href="#d4e183"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDomainName"><span>has
+                        domain name</span></a></li>
+            <li><a href="#d4e193"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEmail"><span>has
+                        email</span></a></li>
+            <li><a href="#d4e204"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEndDate"><span>has
+                        end date</span></a></li>
+            <li><a href="#d4e215"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluationDate"><span>has
+                        evaluation date</span></a></li>
+            <li><a href="#d4e225"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluatorName"><span>has
+                        evaluator name</span></a></li>
+            <li><a href="#d4e234"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasModuleName"><span>has
+                        module name</span></a></li>
+            <li><a href="#d4e243"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasName"><span>has
+                        name</span></a></li>
+            <li><a href="#d4e255"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasPurpose"><span>has
+                        purpose</span></a></li>
+            <li><a href="#d4e264"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasScore"><span>has
+                        score</span></a></li>
+            <li><a href="#d4e273"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStartDate"><span>has
+                        start date</span></a></li>
+            <li><a href="#d4e285"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStatus"><span>has
+                        status</span></a></li>
+            <li><a href="#d4e294"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudentID"><span>has
+                        student i d</span></a></li>
+            <li><a href="#d4e303"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSubmissionDate"><span>has
+                        submission date</span></a></li>
+            <li><a href="#d4e313"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTechName"><span>has
+                        tech name</span></a></li>
+            <li><a href="#d4e322"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTitle"><span>has
+                        title</span></a></li>
+            <li><a href="#d4e331"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasType"><span>has
+                        type</span></a></li>
+            <li><a href="#d4e341"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#isTeamLeader"><span>is
+                        team leader</span></a></li>
+        </ul>
+        <div id="d4e123" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasAbstract"></a>
+            <h3>has abstract<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasAbstract</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e133" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasActivityName"></a>
+            <h3>has activity name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasActivityName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e142" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasComments"></a>
+            <h3>has comments<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasComments</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e151" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDeliverableName"></a>
+            <h3>has deliverable name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to
+                    <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDeliverableName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e161" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDepartment"></a>
+            <h3>has department<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDepartment</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor">supervisor</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e170" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDescription"></a>
+            <h3>has description<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDescription</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain">domain</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module">module</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology">technology</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e183" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDomainName"></a>
+            <h3>has domain name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasDomainName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Domain">domain</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e193" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEmail"></a>
+            <h3>has email<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEmail</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor">supervisor</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e204" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEndDate"></a>
+            <h3>has end date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEndDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time
+                            stamp</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e215" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluationDate"></a>
+            <h3>has evaluation date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluationDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e225" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluatorName"></a>
+            <h3>has evaluator name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasEvaluatorName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e234" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasModuleName"></a>
+            <h3>has module name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasModuleName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module">module</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e243" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasName"></a>
+            <h3>has name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasName
+            </p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Supervisor">supervisor</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e255" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasPurpose"></a>
+            <h3>has purpose<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasPurpose</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Module">module</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e264" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasScore"></a>
+            <h3>has score<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasScore</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Evaluation">evaluation</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e273" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStartDate"></a>
+            <h3>has start date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStartDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time
+                            stamp</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e285" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStatus"></a>
+            <h3>has status<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStatus</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e294" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudentID"></a>
+            <h3>has student i d<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasStudentID</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e303" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSubmissionDate"></a>
+            <h3>has submission date<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasSubmissionDate</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e313" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTechName"></a>
+            <h3>has tech name<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTechName</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology">technology</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e322" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTitle"></a>
+            <h3>has title<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasTitle</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Project">project</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e331" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasType"></a>
+            <h3>has type<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong> http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#hasType
+            </p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Technology">technology</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="d4e341" class="entity"><a
+                name="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#isTeamLeader"></a>
+            <h3>is team leader<sup title="data property" class="type-dp">dp</sup><span class="backlink"> back to <a
+                        href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span></h3>
+            <p><strong>IRI:</strong>
+                http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#isTeamLeader</p>
+            <div class="description">
+                <dl>
+                    <dt>has domain</dt>
+                    <dd><span class="dotted"
+                            title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Student">student</span><sup
+                            title="class" class="type-c">c</sup></dd>
+                    <dt>has range</dt>
+                    <dd><span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="generalaxioms">
+        <h2>General Axioms</h2>
+        <div id="d4e491" class="entity">
+            <h3>All Disjoint Classes <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+            <p><span class="dotted"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Activity">activity</span><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e356"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Analysis">analysis</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e368"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deployment">deployment</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e375"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Design">design</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e383"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Documentation">documentation</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e406"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Implementation">implementation</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e483"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Testing">testing</a><sup
+                    title="class" class="type-c">c</sup></p>
+        </div>
+        <div id="d4e514" class="entity">
+            <h3>All Disjoint Classes <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+            <p><span class="dotted"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Deliverable">deliverable</span><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e425"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Presentation">presentation</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e437"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Prototype">prototype</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e444"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#Report">report</a><sup
+                    title="class" class="type-c">c</sup>, <a href="#d4e456"
+                    title="http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#SourceCode">source
+                    code</a><sup title="class" class="type-c">c</sup></p>
+        </div>
+    </div>
+    <div id="namespacedeclarations">
+        <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+        <dl>
+            <dt><em>default namespace</em></dt>
+            <dd>http://www.semanticweb.org/ariqanayab/ontologies/2025/3/untitled-ontology-9#</dd>
+            <dt>3</dt>
+            <dd>http://www.semanticweb.org/ariqanayab/ontologies/2025/3/</dd>
+            <dt>owl</dt>
+            <dd>http://www.w3.org/2002/07/owl#</dd>
+            <dt>rdf</dt>
+            <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+            <dt>rdfs</dt>
+            <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+            <dt>xsd</dt>
+            <dd>http://www.w3.org/2001/XMLSchema#</dd>
+        </dl>
+    </div>
+    <p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a
+            href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a
+            href="http://www.essepuntato.it">Silvio Peroni</a>
+        .
+    </p>
+</body>
+<div id="smartyContainer"
+    style="position: absolute; top: 0px; right: 0px; line-height: initial; z-index: 2147483647; width: auto; font-size: initial;">
+</div>
+
+</html>
